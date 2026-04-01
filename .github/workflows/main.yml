@@ -12,5 +12,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run training
-        run: python nlp_model.py
+        run: python transfer_model.py
 
