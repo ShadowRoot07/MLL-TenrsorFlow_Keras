@@ -12,12 +12,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run training
-        run: python transfer_model-2.py
+        run: python data_aug_model.py
       - name: Upload Model
         uses: actions/upload-artifact@v4
         with:
-          name: shadow-ai-model
+          name: shadow-v2-artifact # Nombre del paquete
           path: |
-            shadow_model.keras
-            shadow_model.tflite
+            shadow_model_v2.keras
+            shadow_model_v2.tflite
 
