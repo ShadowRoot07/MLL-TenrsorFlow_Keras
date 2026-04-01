@@ -12,7 +12,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run training
-        run: python smart_train-2.py
+        run: python smart_train-3.py
       - name: Upload Model
         uses: actions/upload-artifact@v4
         with:
